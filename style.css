@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    float: left;
+}
+
+.box{
+    background-image: url("./gm.png");
+    width: 225px;
+    height: 400px;
+    animation: gm 4s steps(23, start) infinite,
+    movearound 12s steps(69, end) infinite alternate 44ms;
+    animation-direction: normal, alternate;
+
+}
+
+@keyframes movearound {
+    0%{
+        transform: translate(0);
+    }
+    100%{transform: translate(600px)}
+
+}
+@keyframes gm{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -5175px 0;
+    }
+}
